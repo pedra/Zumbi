@@ -1,0 +1,77 @@
+/* ZUMBI */
+
+* {font-family: Oxygen,'Coming Soon', sans-serif; transition: .3s}
+body { margin: 0; transition: 3s}
+h1 { font-size: 4em; margin:10px 0 20px 0}
+h2 { font-size: 3em; margin:0}
+h1, h2 { font-family: 'Open Sans Condensed', 'Open Sans', sans-serif}
+img {max-width: 100%; float: left; margin: 0 20px 20px 0; box-shadow: 0 3px 7px #999}
+li { color:#999; font-style: italic}
+[contenteditable]{outline:0px solid transparent}
+[contenteditable]:focus{outline:0px solid transparent}
+pre { color:#000; background: #F4F4F4; font-family: 'Ubuntu Mono',monospace; font-weight: bold; padding: 10px 20px; margin:0}
+blockquote { color: #890; font-family: Oxygen, sans-serif; font-style: italic; margin: 0; padding: 10px 25px}
+blockquote::before, blockquote::after {content: '"'; color:#CCC; font-size: 4em; font-family: 'Ubuntu Mono', monospace; padding: 0}
+blockquote::before{float:left; margin: -9px 0 0 -40px}
+blockquote::after{float:right; margin: -9px -14px 0 -40px}
+table {border-collapse:separate; border-spacing:0; width: 100%}
+table th { border-bottom: 1px solid #890; white-space: pre; font-size: 0.8em; font-weight: normal;
+background: #890; color:#000; padding: 2px 8px}
+table tr th:first-child { text-align: left; background: transparent; font-weight: bold}
+table td { border:1px solid #F9F9F9; border-left:none; border-top: none; font-size: 0.5em; color:#999; padding: 2px 5px; text-align: center}
+table tr td:first-child { width: 100%; color:#000; font-size: .8em; padding-left: 22px; text-align: left;
+background:transparent url(../style/icons/i16/file.png) left center no-repeat}
+table tr td:last-child { text-align: right}
+table tr:hover td { background-color:#F4F4FF; cursor: pointer; color:#000}
+
+/* File/Dir ICONS */
+.dirback td:first-child {background-image:url(../style/icons/i16/up.png)}
+.diretorios td:first-child {background-image:url(../style/icons/i16/folder.png)}
+.php td:first-child {background-image:url(../style/icons/i16/php.png)}
+.html td:first-child {background-image:url(../style/icons/i16/html.png)}
+.xml td:first-child,
+.htaccess td:first-child,
+.ini td:first-child,
+.log td:first-child {background-image:url(../style/icons/i16/xml.png)}
+.json td:first-child {background-image:url(../style/icons/i16/json.png)}
+.png td:first-child,
+.jpg td:first-child,
+.gif td:first-child,
+.ico td:first-child {background-image:url(../style/icons/i16/img.png)}
+.txt td:first-child {background-image:url(../style/icons/i16/txt.png)}
+.zip td:first-child {background-image:url(../style/icons/i16/zip.png)}
+
+#container { width: 98%; min-width: 320px; max-width: 1000px; margin: 0 auto 20px auto}
+.medium-video {width: 100%; height: 600px; border: none}
+.medium-imagem { width: 100%}
+.medium-remove-content { padding:10px 0 0 0; text-align: right; cursor: pointer}
+
+/* MENU */
+.command {margin: 0; padding: 0; color:#999; text-align: right}
+.command span { display:inline-block; padding:10px; padding-right: 0; text-align: right}
+.command a { float:left; display: inline-block; padding: 10px 15px; text-decoration: none; color:#999; xbackground: #F4F4F4}
+.command a:hover { background: #000; color:#FFF}
+/* SUB MENU */
+.command a ul { display:none; opacity: 0.98; list-style: none; padding: 0; margin:9px 0 0 -15px; position:absolute;
+background-image: linear-gradient(to bottom, #000, #444); box-shadow: 2px 3px 5px #000}
+.command a ul li{ font-style: normal; padding: 10px 15px; color:#BBB; text-align: left}
+.command a ul li:hover { background: #444; color: #FFF}
+.command a:hover ul { display:block}
+
+/* Menor que 800 pixels. */
+@media screen and (max-width: 800px) {
+    body { background: #000; color:#FFF; font-size: 0.8em}
+    img {width: 100%; margin: inherit 8px}
+    h1 {font-size: 3em}
+    h2 {font-size: 2em}
+    a { color: #890}
+    .medium-video { width: 100%; height: 500px}
+    #container { color:#999}
+    /* MENU */
+    .command a:hover { background: #292929; color:#FFF}
+    .command a ul {background-image: linear-gradient(to bottom, #292929, #555); border: 1px solid #292929; border-top: none}
+}
+/* Menor que 400 pixels. */
+@media screen and (max-width: 400px) {
+    .medium-video { width: 100%; height: 300px}
+}

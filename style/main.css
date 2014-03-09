@@ -1,0 +1,28 @@
+/* Main Style File 
+ * author http://google.com/+BillRocha 
+ * date:  2014/02/08
+*/
+
+@import url(lib/reset.css);
+*{font-family: Helvetica, 'Open Sans',"Trebuchet MS", Optima, Arial, Helvetica, sans-serif; transition-duration: 0.5s;}
+
+body { background: #890 url(http://lorempixel.com/1024/728) 0 0 fixed; background-attachment: cover} 
+
+.sitetop { position: absolute; top:40%; left:0; right: 0; height: 60px; background: rgba(0,0,0,.8);}
+.sitetop .maintop { margin: 0 auto; width: 400px}
+.sitetop .button { float:left; display: block; width:50px; height: 50px; margin:5px 2px 0 2px; cursor: pointer;
+    background-color: rgba(255,255,255, 0.4); background-position: center center; background-repeat: no-repeat; }
+.sitetop .button:hover { background-color: rgba(255, 255, 255,1); box-shadow: 0 0 6px #000}
+.sitetop h1 { display: inline-block;font-size: 26px; padding:17px 10px; margin: 0; color:#999; text-shadow: 0 0 3px #111; font-weight: bold}
+
+.sitetop .plus { background-image: url(icons/plus.png)}
+.sitetop .search { background-image: url(icons/search.png)}
+.sitetop .github { background-image: url(icons/github.png)}
+.sitetop .book { background-image: url(icons/book.png)}
+
+.container { padding: 55px 20px 20px 20px}
+
+/* Menor que 600 pixels. */
+@media screen and (max-width: 600px) {
+    .sitetop { top: 30%}
+}

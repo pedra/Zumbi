@@ -1,0 +1,35 @@
+<?php
+
+//CSS Minify ----------------------------------------------------------------
+
+include __DIR__.'/CSSmin.php';
+$dir = realpath(__DIR__.'/../style/').'/';
+
+echo $origin = $dir.'lib/reset.css';
+echo '<br>'.$dest = $dir.'lib/reset.min.css';
+
+file_put_contents($dest, (new CSSmin())->run(file_get_contents($origin)));
+
+exit();
+
+
+
+//JS Minify -----------------------------------------------------------------
+
+include __DIR__.'/JSMinPlus.php';
+$dir = realpath(__DIR__.'/../script/lib/').'/';
+
+echo $origin = $dir.'medium-editor.js';
+echo '<br>'.$dest = $dir.'medium-editor.min.js';
+
+file_put_contents($dest, JSMinPlus::minify(file_get_contents($origin)));
+
+exit();
+
+
+$java = '/var/www/custa/java/';
+
+
+echo system('java -jar '.$java.'yuicompressor.jar '.$origin.' -o '.$dest, $ret);
+exit($ret);
+
