@@ -1,0 +1,27 @@
+{
+    "name": "neos/image",
+    "description": "Image Tools",
+    "keywords": ["image", "tools", "assets"],
+    "homepage": "http://github.com/pedra/Image",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bill Rocha",
+            "email": "prbr@ymail.com",
+            "homepage": "http://billrocha.tk"
+        }
+    ],
+    "archive": {
+        "exclude": ["/*.json", "/*.git", "/*.md", ".gitignore"]
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "neos/data": "dev-master",
+        "neos/start": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {"Neos": "src/"}
+    },
+    "minimum-stability": "dev"
+}
