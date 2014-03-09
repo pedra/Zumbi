@@ -1,0 +1,29 @@
+{
+    "name": "neos/html",
+    "description": "Simple template engine with zTag & Razor",
+    "keywords": ["template", "html", "assets"],
+    "homepage": "http://github.com/pedra/Html",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bill Rocha",
+            "email": "prbr@ymail.com",
+            "homepage": "http://billrocha.tk"
+        }
+    ],
+    "archive": {
+        "exclude": ["/*.json", "/*.git", "/*.md", ".gitignore"]
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "neos/data": "dev-master"
+    },
+    "suggest": {
+        "neos/start": "Basic starter for PHP web projects"
+    },
+    "autoload": {
+        "psr-0": {"Neos": "src/"}
+    },
+    "minimum-stability": "dev"
+}
