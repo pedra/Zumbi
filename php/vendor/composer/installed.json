@@ -1,0 +1,193 @@
+[
+    {
+        "name": "neos/data",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pedra/Data.git",
+            "reference": "e843058dfeb3cf7e7372a205de69d2d7aace6f56"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pedra/Data/zipball/e843058dfeb3cf7e7372a205de69d2d7aace6f56",
+            "reference": "e843058dfeb3cf7e7372a205de69d2d7aace6f56",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "suggest": {
+            "neos/start": "Basic starter for PHP web projects"
+        },
+        "time": "2014-02-26 18:04:55",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Neos": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bill Rocha",
+                "email": "prbr@ymail.com",
+                "homepage": "http://billrocha.tk"
+            }
+        ],
+        "description": "Data componentes (configuration, databases, etc)",
+        "homepage": "http://github.com/pedra/Data",
+        "keywords": [
+            "config",
+            "data",
+            "database"
+        ]
+    },
+    {
+        "name": "neos/start",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pedra/start.git",
+            "reference": "118676710b355aade56a0301df1fd04689a0453d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pedra/start/zipball/118676710b355aade56a0301df1fd04689a0453d",
+            "reference": "118676710b355aade56a0301df1fd04689a0453d",
+            "shasum": ""
+        },
+        "require": {
+            "neos/data": "dev-master",
+            "neos/html": "dev-master",
+            "php": ">=5.4.0"
+        },
+        "time": "2014-02-26 17:05:26",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Neos": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bill Rocha",
+                "email": "prbr@ymail.com",
+                "homepage": "http://billrocha.tk"
+            }
+        ],
+        "description": "Simple basic start for PHP web projects",
+        "homepage": "http://github.com/pedra/start",
+        "keywords": [
+            "core",
+            "framework",
+            "starter"
+        ]
+    },
+    {
+        "name": "neos/html",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pedra/Html.git",
+            "reference": "5011780cf6e62845f45678dcf4a62cba26c56e70"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pedra/Html/zipball/5011780cf6e62845f45678dcf4a62cba26c56e70",
+            "reference": "5011780cf6e62845f45678dcf4a62cba26c56e70",
+            "shasum": ""
+        },
+        "require": {
+            "neos/data": "dev-master",
+            "php": ">=5.4.0"
+        },
+        "suggest": {
+            "neos/start": "Basic starter for PHP web projects"
+        },
+        "time": "2014-02-27 02:45:46",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Neos": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bill Rocha",
+                "email": "prbr@ymail.com",
+                "homepage": "http://billrocha.tk"
+            }
+        ],
+        "description": "Simple template engine with zTag & Razor",
+        "homepage": "http://github.com/pedra/Html",
+        "keywords": [
+            "assets",
+            "html",
+            "template"
+        ]
+    },
+    {
+        "name": "neos/image",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/pedra/Image.git",
+            "reference": "0ca8a0a2d8e5cad65dd0b2f493c0993b98d1e4d7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/pedra/Image/zipball/0ca8a0a2d8e5cad65dd0b2f493c0993b98d1e4d7",
+            "reference": "0ca8a0a2d8e5cad65dd0b2f493c0993b98d1e4d7",
+            "shasum": ""
+        },
+        "require": {
+            "neos/data": "dev-master",
+            "neos/start": "dev-master",
+            "php": ">=5.4.0"
+        },
+        "time": "2014-02-27 22:55:47",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Neos": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bill Rocha",
+                "email": "prbr@ymail.com",
+                "homepage": "http://billrocha.tk"
+            }
+        ],
+        "description": "Image Tools",
+        "homepage": "http://github.com/pedra/Image",
+        "keywords": [
+            "assets",
+            "image",
+            "tools"
+        ]
+    }
+]
